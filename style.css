@@ -77,6 +77,11 @@ header{
  .contain img{
   width: 100%;
   height: 90%;
+  position: absolute;
+ }
+
+ .contain img:hover{
+  display: none;
  }
 
  .contain .square{
