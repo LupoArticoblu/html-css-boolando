@@ -70,8 +70,6 @@ header{
   margin: 0 10px;
   width: calc(100% / 3 - 23px);
   height: 600px;
-  background-color: blue;
-  border: 1px solid red;
   display: inline-block;
 }
  .contain img{
@@ -102,6 +100,44 @@ header{
   color: black;
   display: flex;
   justify-content: center;
+ }
+
+ .contain span{
+  padding:  5px 10px;
+  background-color: red;
+  color: aliceblue;
+  position: absolute;
+  bottom: 80px;
+  left: 10px;
+ }
+
+ .contain .desc{
+  height: 60px;
+  width: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+ }
+
+ .contain .desc p{
+  font-size: 1em;
+ }
+
+ .contain .desc .description{
+  font-size: 1.5rem;
+  font-weight: 600;
+ }
+
+ .contain .desc .price{
+  font-size: smaller;
+  text-decoration: line-through;
+  color: red;
+ }
+
+ .contain .desc .price::after{
+  content: '14,99€';
+  color: green;
+  text-decoration: none;
  }
 
 /* footer */
