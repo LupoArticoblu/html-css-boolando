@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* header*/
+
+header{
+  position: fixed;
+  width: 100%;
+}
+
+.container.orange{
+  padding: 0 100px;
+  height: 10vh;
+  display: flex;
+  background-color: orange;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container.orange nav ul{
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+.container.orange nav ul li{
+  list-style: none;
+  padding: 1em;
+}
+
+.container.orange nav ul li:hover{
+  background-color: darkgoldenrod;
+  cursor: pointer;
+}
+
+.container.orange .logo{
+  width: 200px;
+  max-width: 300px;
+  height: 50px;
+  background-image: url(img/boolean-logo.png);
+}
+
+.container.orange .icons{
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+.container.orange .icons i{
+  padding: 1px;
+}
+
+
+
+/* main */
+
+.container-main{
+  margin: 100px auto;
+}
+
+/* footer */
