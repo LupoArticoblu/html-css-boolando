@@ -14,6 +14,7 @@ header{
   position: fixed;
   width: 100%;
   top:0;
+  z-index: 999;
 }
 
 .container.orange{
@@ -78,7 +79,15 @@ header{
   position: absolute;
  }
 
- .contain img:hover{
+ .contain .block{
+  display: none;
+ }
+
+ .contain .cat:hover .block{
+  display: inline-block;
+ }
+
+ .contain .cat:hover .space{
   display: none;
  }
 
@@ -100,9 +109,14 @@ header{
   color: black;
   display: flex;
   justify-content: center;
+  font-size: 2rem;
  }
 
- .contain span{
+ .contain .heart a:hover{
+  color: chartreuse;
+ }
+
+ .contain .sale{
   padding:  5px 10px;
   background-color: red;
   color: aliceblue;
@@ -116,7 +130,8 @@ header{
   width: 20px;
   position: absolute;
   bottom: 0;
-  left: 0;
+  display: flex;
+  flex-direction: column;
  }
 
  .contain .desc p{
@@ -128,16 +143,22 @@ header{
   font-weight: 600;
  }
 
+ .contain .desc .sconto{
+  display: flex;
+  flex-direction: row;
+ }
+
  .contain .desc .price{
   font-size: smaller;
   text-decoration: line-through;
   color: red;
+  
  }
 
- .contain .desc .price::after{
-  content: '14,99€';
+ .contain .desc .sold{
   color: green;
   text-decoration: none;
+  
  }
 
 /* footer */
